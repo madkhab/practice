@@ -16,7 +16,7 @@ header{
 }
 .container > div{
     background-color: rgb(98, 248, 191);
-    border: 3px solid black;
+    border: 1px solid black;
     margin:20px;
     padding-top:40px;
     padding-left:15px;
@@ -32,9 +32,18 @@ span {
     top:0;
     right:0;
     font-size: 1.25em;
-    border:2px solid black;
+    border:1px solid black;
     border-top:none;
     border-right:none;
+}
+.container > div:nth-child(1){
+    background-color: aquamarine;
+}
+.container > div:nth-child(2){
+    background-color: rgb(127, 255, 170);
+}
+.container > div:nth-child(3){
+    background-color: rgb(178, 255, 127);
 }
 
 .chicken {
