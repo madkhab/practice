@@ -1,0 +1,35 @@
+:root{
+    --color-white: #f3f3f3;
+    --color-darkblue: #502845;
+    --color-darkblue-alpha: rgba(50, 27, 37, 0.8);
+    --color-green: #62c743;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        150deg,
+        rgba(156, 75, 145, 0.8),
+        rgba(103, 182, 172, 0.7)
+    ),url(https://www.oecd-ilibrary.org/sites/53c2f904-en/images/eps/5--hand_pen--GettyImages_99277172.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    text-align: center;
+}
