@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+h1{
+    font-size: 6em;
+}
+h2{
+    font-size: 3em;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img{
+    display:block;
+    width:100%;
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 15px;
+    line-height: 2em;
+    background-color: darkorange;
+}
+.nav > ul > li {
+    margin-left: 1.7rem;
+}
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+@media (max-width: 560px) {
+    .nav { 
+        justify-content: center;
+    }
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+.nav-list a {
+    padding: 15px;
+}
+.nav-list a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    border-radius: 1.9rem;
+}
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.welcome-section > h1 { 
+    color: white;
+}
+.welcome-section > p {
+    color: darkorange;
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+.project-section { 
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #00A4CCFF;
+}
+.project-section > h2 {
+    max-width: 580px;
+    margin: 2em auto 6rem auto;
+    border-bottom: 2px solid black;
+    font-weight: 500;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.project {
+    background-color: darkorange;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+.project > img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.project > p {
+    font-size: 1.5rem;
+    padding: 35px 5px;
+}
+.project:hover{ 
+    background-color: black;
+    color: darkorange;
+    transition: 0.5s;
+}
+.button{ 
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+}
+.button-show-all {
+    font-size: 1.5rem;
+    background-color:darkorange;
+}
+.button-show-all:hover {
+    background: black;
+    color:darkorange;
+    transition: 0.5s;
+}
+.contact-section { 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height:80vh;
+    padding: 0 2rem;
+    background-color: #000;
+}
+.contact-section-header {
+    color: white;
+}
+.contact-section-header > p {
+    font-style: italic;
+    font-size: 1.4em;
+    margin: 0.5rem auto;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+.contact-details {
+    font-size: 2rem;
+    color:darkorange;
+    margin:10px auto;
+}
+.contact-details:hover{ 
+    background-color: darkorange;
+    color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.fas::before{
+    padding: 10px;
+}
+.fab::before{
+    padding: 10px;
+}
+footer { 
+    background-color: darkorange;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+    height:20vh;
+    padding: 2rem;
+}
+footer > p {
+    margin: 0 2rem;
+}
